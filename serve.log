@@ -1,0 +1,42 @@
+C:\Users\adm-u653647\mhs_setups\tek-mso5-live\launch.py:103: DeprecationWarning: Publisher is deprecated; compose MhsDict.attach() + driver.mount() + driver.start() (see issue #256).
+  return Publisher(
+C:\Users\adm-u653647\python-sdk\src\mhs\mhs_api\attach.py:1109: UserWarning: slot 'scope/run' declares an mhs_watchdog Heartbeat link: a Watchdog must beat it within its timeout or writes to this slot freeze
+  d.setup_slot(key, slot_kind, *chain, **kw)
+the Dict manifest is sealed with the setup placeholder identity; device 'tek-mso5-live' cannot claim the document top level (S10.3). Mount before seal_manifest().
+VERIFY OK scope/ch1_trace = <memory at 0x000001D365E7C1C0>
+VERIFY OK scope/idn = 'TEKTRONIX,MSO58,Q100104,CF:91.1CT FV:2.12.5.2206'
+VERIFY OK scope/link_error = ''
+VERIFY OK scope/meas_frequency = 1000.1593397241
+VERIFY OK scope/meas_vpp = 2.66234375
+VERIFY OK scope/ch1_scale = 1.0
+VERIFY OK scope/horizontal_scale = 0.0002
+VERIFY OK scope/run = 0
+VERIFY OK __estop__ = False
+VERIFY DONE failures=0
+ESTOP triggered: fired estop_write on 1 slot(s)
+ESTOP DRILL engaged: on_disconnect applied to 1 slot(s)
+ESTOP DRILL OK __estop__ = True
+ESTOP DRILL OK scope/run = 0 (policy ZERO)
+ESTOP DRILL done: __estop__ stays latched (restart clears it), drill failures=0
+ESTOP DRILL recovery: restarting the publisher to clear the latch
+the Dict manifest is sealed; departed device 'tek-mso5-live' stays in the document (roster/attribution cannot be rewritten)
+the Dict manifest is sealed with the setup placeholder identity; device 'tek-mso5-live' cannot claim the document top level (S10.3). Mount before seal_manifest().
+VERIFY OK scope/ch1_trace = <memory at 0x000001D365E7D300>
+VERIFY OK scope/idn = 'TEKTRONIX,MSO58,Q100104,CF:91.1CT FV:2.12.5.2206'
+VERIFY OK scope/link_error = ''
+VERIFY OK scope/meas_frequency = 1000.1593397241
+VERIFY OK scope/meas_vpp = 2.66234375
+VERIFY OK scope/ch1_scale = 1.0
+VERIFY OK scope/horizontal_scale = 0.0002
+VERIFY OK scope/run = 0
+VERIFY OK __estop__ = False
+VERIFY DONE failures=0
+SERVING setup=tek-mso5-live mcp=http://127.0.0.1:8766/sse storage=inmem
+slot 'scope/ch1_trace' quarantined from the MCP surface: name contains characters outside [A-Za-z0-9_.-] (got 'scope/ch1_trace'); refusing to embed it in tool names / URIs (listed under quarantined_slots in describe_setup)
+slot 'scope/idn' quarantined from the MCP surface: name contains characters outside [A-Za-z0-9_.-] (got 'scope/idn'); refusing to embed it in tool names / URIs (listed under quarantined_slots in describe_setup)
+slot 'scope/link_error' quarantined from the MCP surface: name contains characters outside [A-Za-z0-9_.-] (got 'scope/link_error'); refusing to embed it in tool names / URIs (listed under quarantined_slots in describe_setup)
+slot 'scope/meas_frequency' quarantined from the MCP surface: name contains characters outside [A-Za-z0-9_.-] (got 'scope/meas_frequency'); refusing to embed it in tool names / URIs (listed under quarantined_slots in describe_setup)
+slot 'scope/meas_vpp' quarantined from the MCP surface: name contains characters outside [A-Za-z0-9_.-] (got 'scope/meas_vpp'); refusing to embed it in tool names / URIs (listed under quarantined_slots in describe_setup)
+slot 'scope/ch1_scale' quarantined from the MCP surface: name contains characters outside [A-Za-z0-9_.-] (got 'scope/ch1_scale'); refusing to embed it in tool names / URIs (listed under quarantined_slots in describe_setup)
+slot 'scope/horizontal_scale' quarantined from the MCP surface: name contains characters outside [A-Za-z0-9_.-] (got 'scope/horizontal_scale'); refusing to embed it in tool names / URIs (listed under quarantined_slots in describe_setup)
+slot 'scope/run' quarantined from the MCP surface: name contains characters outside [A-Za-z0-9_.-] (got 'scope/run'); refusing to embed it in tool names / URIs (listed under quarantined_slots in describe_setup)
